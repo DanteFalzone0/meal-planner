@@ -7,8 +7,7 @@ namespace MealPlanner {
       var dbContext = new MealDbContext();
       DescribeOptions();
       int choice = GetChoice();
-      switch (choice)
-      {
+      switch (choice) {
         case 0:
           AddNewMealToDb(dbContext);
           break;
