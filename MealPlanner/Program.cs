@@ -10,22 +10,22 @@ namespace MealPlanner {
       switch (choice) {
         case 0:
           AddNewMealToDb(dbContext);
-          break;
+        break;
         case 1:
           ViewAllMeals(dbContext);
-          break;
+        break;
         case 2:
           SelectRandomMeal(dbContext);
-          break;
+        break;
         case 3:
           GenerateMealPlan(dbContext);
-          break;
+        break;
         case 4:
           GenerateMealPlanFromIngredients(dbContext);
-          break;
+        break;
         default:
           Console.WriteLine("Invalid selection. Aborting.");
-          break;
+        break;
       }
       dbContext.SaveChanges();
     }
